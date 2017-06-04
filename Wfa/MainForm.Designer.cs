@@ -33,6 +33,7 @@
             // 
             // hexEditorLbl
             // 
+            this.hexEditorLbl.AutoSize = true;
             this.hexEditorLbl.Location = new System.Drawing.Point(0, 0);
             this.hexEditorLbl.Name = "hexEditorLbl";
             this.hexEditorLbl.Size = new System.Drawing.Size(447, 122);
@@ -46,8 +47,9 @@
             this.Controls.Add(this.hexEditorLbl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MainForm";
-            this.Text = "MainForm";
+            this.Text = "Editor";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
