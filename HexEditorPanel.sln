@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bl", "Bl\Bl.csproj", "{4F9FDB19-6116-41A1-8FF7-498110A78D1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wfa", "Wfa\Wfa.csproj", "{E6EFCE72-4F30-455A-AEEB-AEA80EAC2FBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F9FDB19-6116-41A1-8FF7-498110A78D1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F9FDB19-6116-41A1-8FF7-498110A78D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F9FDB19-6116-41A1-8FF7-498110A78D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F9FDB19-6116-41A1-8FF7-498110A78D1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6EFCE72-4F30-455A-AEEB-AEA80EAC2FBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6EFCE72-4F30-455A-AEEB-AEA80EAC2FBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6EFCE72-4F30-455A-AEEB-AEA80EAC2FBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6EFCE72-4F30-455A-AEEB-AEA80EAC2FBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
