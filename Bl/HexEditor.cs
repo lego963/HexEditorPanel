@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace Bl
@@ -10,6 +11,8 @@ namespace Bl
         public string[][] HexData { get; set; }
         private int _x;
         private int _y;
+        private string pattern;
+        private Regex spellChecker;
         public HexEditor()
         {
             InitializeComponent();
@@ -18,14 +21,23 @@ namespace Bl
             HexData = Initialize().ToArray();
             EditorBtn.Enabled = false;
             EditorTxtBox.Enabled = false;
+            pattern = @"[0-9A-F]{2}";
+            spellChecker = new Regex(pattern, RegexOptions.IgnoreCase);
         }
 
         private void EditorBtn_Click(object sender, EventArgs e)
         {
-            HexData[_y][_x] = EditorTxtBox.Text;
-            UpdateLabel();
-            EditorBtn.Enabled = false;
-            EditorTxtBox.Enabled = false;
+            if (spellChecker.IsMatch(EditorTxtBox.Text))
+            {
+                HexData[_y][_x] = EditorTxtBox.Text.ToUpper();
+                UpdateLabel();
+                EditorBtn.Enabled = false;
+                EditorTxtBox.Enabled = false;
+            }
+            else
+            {
+                MessageBox.Show(@"pls check data", @"Hex checker");
+            }
         }
 
         private void InputLbl_MouseDoubleClick(object sender, MouseEventArgs e)
